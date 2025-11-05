@@ -1,6 +1,8 @@
 
 # AI / LLM Platform Deployment — Terraform + Multi‑Cloud Kubernetes (EKS, AKS, GKE, OKE)
 
+> Started working on this project. I'm very excited about this opportunity!
+
 Deploy a production‑lean GenAI stack on **managed Kubernetes** across **AWS EKS**, **Azure AKS**, **Google GKE**, or **Oracle OKE** (OCI) using **Terraform**. Then install **Argo CD**, **MLflow**, and **Grafana/Prometheus** via Helm.
 
 > Beginner‑friendly: follow Step 1 → Step 4 for any cloud. You only need one cloud to get started.
