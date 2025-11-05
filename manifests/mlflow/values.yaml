@@ -1,0 +1,5 @@
+
+artifactRoot: "s3://REPLACE_ME-mlflow-artifacts"
+defaultArtifactRoot: ""
+service:
+  type: ClusterIP

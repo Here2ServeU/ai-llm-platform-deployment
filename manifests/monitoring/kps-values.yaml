@@ -1,0 +1,7 @@
+
+grafana:
+  defaultDashboardsEnabled: true
+  adminPassword: "admin"
+prometheus:
+  prometheusSpec:
+    scrapeInterval: "30s"

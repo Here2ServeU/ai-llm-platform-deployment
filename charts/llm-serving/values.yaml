@@ -1,0 +1,13 @@
+
+replicaCount: 1
+image:
+  repository: public.ecr.aws/docker/library/nginx
+  tag: "alpine"
+service:
+  type: ClusterIP
+  port: 80
+route:
+  enabled: false
+env:
+  OPENAI_API_KEY: ""
+  HF_API_TOKEN: ""
