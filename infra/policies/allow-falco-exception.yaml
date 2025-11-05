@@ -1,0 +1,22 @@
+apiVersion: kyverno.io/v2
+kind: PolicyException
+metadata:
+  name: allow-falco-host-access
+  namespace: devsecops
+spec:
+  exceptions:
+    - policyName: disallow-host-path
+      ruleNames:
+        - autogen-host-path
+    - policyName: disallow-privileged-containers
+      ruleNames:
+        - autogen-privileged-containers
+  match:
+    any:
+      - resources:
+          kinds:
+            - Pod
+          namespaces:
+            - devsecops
+          names:
+            - falco-*
